@@ -5,7 +5,7 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Arial', serif;
+    font-family: 'STXingkai', serif;
     min-height: 100vh;
     background: url('https://i.pinimg.com/550x/69/fa/22/69fa223bc3b4e0c1cd8e63aa07131cb3.jpg') no-repeat center center fixed;
     background-size: contain; /* Rasmni yaqinlashtirmaslik uchun */
@@ -46,7 +46,7 @@ header p {
 }
 
 header h1:nth-of-type(2) {
-    font-family: 'Lora', serif;
+    font-family: 'STXingkai', serif;
     font-size: 23px;
     margin: 20px 0;
     color: #8B0000;
