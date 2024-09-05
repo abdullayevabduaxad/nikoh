@@ -1,3 +1,5 @@
+/* Asosiy CSS qismi */
+
 body, html {
     height: 100%;
     margin: 0;
@@ -5,19 +7,11 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'STXingkai', serif;
+    font-family: 'Arial', serif;
     min-height: 100vh;
-    background: url('https://i.pinimg.com/550x/69/fa/22/69fa223bc3b4e0c1cd8e63aa07131cb3.jpg') no-repeat center center fixed;
-    background-size: contain; /* Rasmni yaqinlashtirmaslik uchun */
-    background-position: center; /* Rasmni markaziy joylashuvini saqlash */
-}
-
-
-@media (max-width: 768px) {
-    body, html {
-        background-size: contain; /* Fon rasmni ekranga sig'dirish uchun */
-        background-position: center top; /* Rasmning yuqoridan boshlab joylashuvi */
-    }
+    background: url('https://ramki-kartinki.ru/_ph/47/572838197.jpg') no-repeat center center fixed;
+    background-size: contain;
+    background-position: center;
 }
 
 .invitation {
@@ -27,26 +21,25 @@ body, html {
     max-width: 90%;
     text-align: center;
     margin: 20px;
-    box-shadow: none; /* Oq fon olib tashlangani uchun soyani ham olib tashlaymiz */
-    background: transparent; /* Oq fonni o'chirish */
+    box-shadow: none;
+    background: transparent;
 }
 
 header h1 {
-    font-family: 'STXingkai', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 17px;
     color: #8B0000;
     margin-bottom: 5px;
-    margin-top: 20px; /* H1 elementini pastroqqa tushirish */
-    /* yoki padding-top: 20px; */
+    margin-top: 20px;
 }
 
 header p {
-    font-size: 9px;
+    font-size: 16px;
     margin: 5px 0;
 }
 
 header h1:nth-of-type(2) {
-    font-family: 'STXingkai', serif;
+    font-family: 'Lora', serif;
     font-size: 23px;
     margin: 20px 0;
     color: #8B0000;
@@ -83,11 +76,11 @@ header h1:nth-of-type(2) {
     justify-content: space-around;
     margin-top: 20px;
     font-size: 1.5em;
-    background: #a96092; /* Taymer orqasidagi pushti rang */
-    color: #fff; /* Matn rangi */
-    padding: 10px; /* Taymerni qoplovchi bo'shliq */
-    border-radius: 10px; /* Taymer atrofidagi yumaloq burchaklar */
-    flex-wrap: wrap; /* Mobil qurilmalarda to'g'ri ko'rinishi uchun */
+    background: #a96092;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    flex-wrap: wrap;
 }
 
 .countdown .time {
@@ -123,18 +116,26 @@ header h1:nth-of-type(2) {
     transform: scale(0.98);
 }
 
+/* Telefon va kichik ekranlar uchun o'zgartirishlar */
+
 @media (max-width: 768px) {
+    body, html {
+        background-size: cover;
+        background-position: center top;
+    }
+
     .invitation {
         width: 100%;
-        padding: 15px;
+        padding: 10px;
+        margin: 0;
     }
 
     header h1 {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     header h1:nth-of-type(2) {
-        font-size: 24px;
+        font-size: 22px;
     }
 
     .details p {
@@ -152,5 +153,43 @@ header h1:nth-of-type(2) {
     #playPauseBtn {
         font-size: 1em;
         padding: 8px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    body, html {
+        background-size: cover;
+        background-position: center top;
+    }
+
+    .invitation {
+        padding: 8px;
+        margin: 5px;
+    }
+
+    header h1 {
+        font-size: 16px;
+    }
+
+    header h1:nth-of-type(2) {
+        font-size: 20px;
+    }
+
+    .details p {
+        font-size: 12px;
+    }
+
+    .countdown {
+        font-size: 1em;
+        padding: 5px;
+    }
+
+    .countdown .time {
+        font-size: 14px;
+    }
+
+    #playPauseBtn {
+        font-size: 0.9em;
+        padding: 6px 15px;
     }
 }
